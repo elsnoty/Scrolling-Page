@@ -1,0 +1,83 @@
+*{
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+body{
+background:linear-gradient(#200016,#10001f);
+height: 100vh;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 97%;
+    z-index: 10;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+header ul{
+display: flex;
+gap: 20px;
+list-style: none;
+}
+header ul li a{
+    padding: 7px 10px;
+    border-radius: 50px;
+}
+ul li a:hover, .diff{
+    background-color: white;
+    color: #200016;
+    
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+#moon2{
+    mix-blend-mode: screen;
+    transform: translateY(50px);
+}
+#con{
+    font-size: 20px;
+    transform: translateY(-240px);
+    color: white;
+}
+.content{
+    background:linear-gradient(#200016,#10001f);
+    color: white;
+    padding: 40px;
+}
+.content h2{
+    font-size: 40px;
+    margin: 20px;
+}
+.content p{
+    margin: 20px;
+    font-size: 25px;
+}
+.main::after{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to top,#200016,transparent);
+} 
